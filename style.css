@@ -115,4 +115,45 @@ header {
 }
 .skills-list span:hover{
       transform: translateY(-3px);
+          border-color: #38bdf8;
+
+}
+
+    /* Projects Section */
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+       /* Individual Project Cards */
+.project-card{
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 24px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+}
+      /* Project Hover Effect */
+.project-card:hover{
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+
+}
+     /*  Project Titles */
+.project-card h3{
+    margin-top:0;
+    color: #f8fafc;
+}
+    /*  Project Descriptions */
+.project-card p{
+    color: #cbd5e1;
+}
+
+/* Responsive Project Grid */
+@media (max-width: 768px) {
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
 }
